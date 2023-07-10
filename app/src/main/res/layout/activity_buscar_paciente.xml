@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.BuscarPaciente"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="889dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="59dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:text="Buscar paciente"
+                android:textColor="@color/naranja"
+                android:textSize="7mm"
+                android:textStyle="bold" />
+
+            <Space
+                android:layout_width="59dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <RelativeLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <EditText
+                android:id="@+id/InputBuscar"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="@drawable/inputs"
+                android:ems="10"
+                android:hint="Buscar"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/verde_oscuro"
+                android:textColorHint="@color/verde_oscuro" />
+
+            <ImageButton
+                android:id="@+id/btnBuscar"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignRight="@+id/InputBuscar"
+                android:adjustViewBounds="true"
+                android:background="@color/transparente"
+                android:padding="8dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/icono_buscar" />
+        </RelativeLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <LinearLayout
+            android:id="@+id/UsuarioInfo"
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:background="@drawable/cuadroverdeazul">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="17dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    app:srcCompat="@drawable/icono_perfil" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/NombreU"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="TextView"
+                android:textColor="@color/verde_oscuro"
+                android:textSize="5mm"
+                android:maxLines="1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:layout_weight="0" />
+
+            <TextView
+                android:id="@+id/UsuarioU"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:text="TextView"
+                android:textColor="@color/verde_oscuro"
+                android:textSize="3mm"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_weight="0" />
+
+            <LinearLayout
+                android:id="@+id/Botones"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0" />
+
+                <Button
+                    android:id="@+id/Agregar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Agregar"
+                    android:textColor="@color/azul_claro"
+                    android:background="@drawable/boton_blanco"/>
+
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0" />
+
+                <Button
+                    android:id="@+id/Eliminar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:text="Eliminar"
+                    android:background="@drawable/boton_naranja"/>
+
+                <Space
+                    android:layout_width="20dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0" />
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/UsuarioNoExisteLabel"
+            android:layout_width="308dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="¡Parece que el usuario no existe! Asegurate de escribirlo bien"
+            android:textAlignment="center"
+            android:textColor="@color/naranja"
+            android:textSize="4mm"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/fondo_buscar"
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/fondo_buscar" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

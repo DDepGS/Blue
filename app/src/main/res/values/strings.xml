@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Blue</string>
+    <string name="nombre_usuario">Nombre Usuario</string>
+    <string name="mensaje">Mensaje</string>
+
+    <string name="URL_LOGIN"></string>
+    <string name="vaya_al_parecer_no_tienes_contactos">¡Vaya! Al parecer no tienes contactos</string>
+    <string name="contactos">Contactos</string>
+
+    <string name="todas_las_notas">Todas las Notas</string>
+    <string name="buscar_notas">Buscar Notas</string>
+    <string name="nota_titulo">Título...</string>
+    <string name="nota_subtitulo">Subtítulo</string>
+    <string name="escribe_algo_aqui">Escribe algo aquí...</string>
+    <string name="miscellaneous">Miscellaneous</string>
+    <string name="elige_un_color">Elige un color</string>
+    <string name="color">Color</string>
+    <string name="opciones">Opciones</string>
+    <string name="anade_una_imagen">Añade una imagen</string>
+    <string name="anade_un_audio">Añade un audio</string>
+    <string name="borrar_nota">Borrar Nota</string>
+    <string name="esta_seguro_que_desea_eliminar_esta_nota">¿Está seguro que desea eliminar esta nota?</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="dialogo_cancelar">CANCELAR</string>
+    <string name="audio">audio</string>
+    <string name="music">audio</string>
+</resources>

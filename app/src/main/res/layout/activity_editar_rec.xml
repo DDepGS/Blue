@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.EditarRec"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="59dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/Titulo"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:text="Editar Recordatorio"
+                    android:textColor="@color/naranja"
+                    android:textSize="7mm"
+                    android:textStyle="bold" />
+
+                <Space
+                    android:layout_width="59dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/labelNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="40dp"
+                android:text="Nombre:"
+                android:textColor="@color/naranja"
+                android:textSize="3mm" />
+
+            <EditText
+                android:id="@+id/NombreRec"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/inputs"
+                android:ems="10"
+                android:hint="Nombre del recordatorio"
+                android:inputType="textCapSentences"
+                android:maxLength="30"
+                android:padding="15dp"
+                android:textColorHint="@color/verde_oscuro"
+                android:textSize="3mm"
+                android:textColor="@color/verde_oscuro"/>
+
+            <TextView
+                android:id="@+id/labelDesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="40dp"
+                android:text="Descripción:"
+                android:textColor="@color/naranja"
+                android:textSize="3mm" />
+
+            <EditText
+                android:id="@+id/DescRec"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/inputs"
+                android:ems="10"
+                android:hint="Descripción del recordatorio"
+                android:inputType="textCapSentences"
+                android:maxLength="30"
+                android:padding="15dp"
+                android:textColorHint="@color/verde_oscuro"
+                android:textSize="3mm"
+                android:textColor="@color/verde_oscuro"/>
+
+            <TextView
+                android:id="@+id/labelTiempo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="40dp"
+                android:text="Hora:"
+                android:textColor="@color/naranja"
+                android:textSize="3mm" />
+
+            <TimePicker
+                android:id="@+id/hora"
+                android:layout_width="300dp"
+                android:layout_height="378dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/cuadroverde"
+                android:headerBackground="@color/verde_oscuro"
+                android:numbersBackgroundColor="@color/verde_oscuro"
+                android:numbersTextColor="@color/white"
+                android:numbersSelectorColor="@color/verde_azul"
+                />
+
+            <TextView
+                android:id="@+id/labelRep"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="40dp"
+                android:text="Repetir:"
+                android:textColor="@color/naranja"
+                android:textSize="3mm" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="40dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/RNunca"
+                    style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+                    android:layout_width="87dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:button="@android:drawable/btn_radio"
+                    android:buttonTint="@color/naranja"
+                    android:colorAccent="@color/azul_claro"
+                    android:minHeight="48dp"
+                    android:onClick="Repeticion"
+                    android:text="Una vez"
+                    android:textColor="#8C8C8C"
+                    android:textSize="3mm" />
+
+                <RadioButton
+                    android:id="@+id/RDiario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:button="@android:drawable/btn_radio"
+                    android:buttonTint="@color/naranja"
+                    android:colorAccent="@color/azul_claro"
+                    android:minHeight="48dp"
+                    android:onClick="Repeticion"
+                    android:text="Diario"
+                    android:textColor="#8C8C8C"
+                    android:textSize="3mm" />
+
+                <RadioButton
+                    android:id="@+id/RHora"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:button="@android:drawable/btn_radio"
+                    android:buttonTint="@color/naranja"
+                    android:colorAccent="@color/azul_claro"
+                    android:minHeight="48dp"
+                    android:onClick="Repeticion"
+                    android:text="Cada hora"
+                    android:textColor="#8C8C8C"
+                    android:textSize="3mm" />
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center">
+
+                <Button
+                    android:id="@+id/Guardar"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="40dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/boton_azul"
+                    android:text="Guardar" />
+
+                <Button
+                    android:id="@+id/Cancelar"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="40dp"
+                    android:background="@drawable/boton_naranja"
+                    android:text="Cancelar" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

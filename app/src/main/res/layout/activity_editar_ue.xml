@@ -1,0 +1,641 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.EditarUE"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="1dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <!-- Título-->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <android.widget.Space
+                        android:layout_width="11dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="270dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Registro"
+                        android:textColor="@color/naranja"
+                        android:textSize="7.5mm"
+                        android:textStyle="bold" />
+
+                    <android.widget.Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+                </LinearLayout>
+
+                <android.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="22dp" />
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <android.widget.Space
+                        android:layout_width="48dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <!-- Nombrelabel-->
+
+                    <TextView
+                        android:id="@+id/NombreLabel"
+                        android:layout_width="356dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Nombre:"
+                        android:textColor="@color/naranja"
+                        android:textSize="2mm"
+                        tools:ignore="DuplicateIds" />
+                </LinearLayout>
+
+                <android.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="12dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <android.widget.Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_weight="1" />
+
+                    <!-- NombreInput-->
+
+                    <EditText
+
+                        android:id="@+id/NombreInput"
+                        android:layout_width="244dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/inputs"
+                        android:ems="10"
+                        android:singleLine="true"
+                        android:gravity="center"
+                        android:hint="Nombre"
+                        android:textColor="@color/verde_oscuro"
+                        android:inputType="textCapSentences"
+                        android:textColorHint="@color/verde_oscuro" />
+
+                    <android.widget.Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+
+                <android.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="12dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <android.widget.Space
+                        android:layout_width="53dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/PrimerApellido"
+                        android:layout_width="361dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Primer apellido:"
+                        android:textColor="@color/naranja"
+                        android:textSize="2mm" />
+
+                </LinearLayout>
+
+                <android.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="12dp" />
+
+                <!--Primer Apellido input -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <android.widget.Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_weight="1" />
+
+                    <EditText
+
+                        android:id="@+id/PApellidoIn"
+                        android:layout_width="244dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/inputs"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:hint="Apellido"
+                        android:singleLine="true"
+                        android:textColor="@color/verde_oscuro"
+                        android:inputType="textCapSentences"
+                        android:textColorHint="@color/verde_oscuro" />
+
+                    <android.widget.Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+
+                <android.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="12dp" />
+
+                <!-- Segundo Apellido label -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <android.widget.Space
+                        android:layout_width="53dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/SegundoApellido"
+                        android:layout_width="361dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Segundo apellido (opcional):"
+                        android:textColor="@color/naranja"
+                        android:textSize="2mm" />
+
+                </LinearLayout>
+
+                <android.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="12dp" />
+
+                <!--Segundo Apellido input -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <android.widget.Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_weight="1" />
+
+                    <EditText
+
+                        android:id="@+id/SApellidoIn"
+                        android:layout_width="244dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/inputs"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:hint="Apellido"
+                        android:singleLine="true"
+                        android:textColor="@color/verde_oscuro"
+                        android:inputType="textCapSentences"
+                        android:textColorHint="@color/verde_oscuro" />
+
+                    <android.widget.Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+
+                <android.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="12dp" />
+
+                <!-- Primer Apellido label -->
+
+
+                <!-- UsuarioLabel-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <android.widget.Space
+                        android:layout_width="56dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/UsuarioLabel"
+                        android:layout_width="366dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Nombre de usuario:"
+                        android:textColor="@color/naranja"
+                        android:textSize="2mm" />
+
+                </LinearLayout>
+
+                <android.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="12dp" />
+
+                <!--Usuario input -->
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <android.widget.Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_weight="1" />
+
+                    <EditText
+
+                        android:id="@+id/UsuarioIn"
+                        android:layout_width="244dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/inputs"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:hint="Nombre de usuario"
+                        android:singleLine="true"
+                        android:textColor="@color/verde_oscuro"
+                        android:inputType="textPersonName"
+                        android:textColorHint="@color/verde_oscuro" />
+
+                    <android.widget.Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+
+                <android.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="12dp" />
+
+                <!--Correo label -->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <android.widget.Space
+                        android:layout_width="56dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/CorreoLabel"
+                        android:layout_width="366dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Correo eléctronico:"
+                        android:textColor="@color/naranja"
+                        android:textSize="2mm" />
+
+                </LinearLayout>
+
+                <android.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="12dp" />
+
+                <!-- CorreoInput-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <android.widget.Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_weight="1" />
+
+                    <EditText
+
+                        android:id="@+id/CorreoIn"
+                        android:layout_width="244dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/inputs"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:hint="Correo eléctronico"
+                        android:textColor="@color/verde_oscuro"
+                        android:inputType="textEmailAddress"
+                        android:singleLine="true"
+                        android:textColorHint="@color/verde_oscuro" />
+
+                    <android.widget.Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+
+                <android.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="12dp" />
+
+
+                <!--Numtel label -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <android.widget.Space
+                        android:layout_width="56dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <TextView
+                        android:id="@+id/NumLabel"
+                        android:layout_width="366dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Número de teléfono:"
+                        android:textColor="@color/naranja"
+                        android:textSize="2mm" />
+
+                </LinearLayout>
+
+                <android.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="12dp" />
+
+                <!-- Numtel Input-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <android.widget.Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_weight="1" />
+
+                    <EditText
+
+                        android:id="@+id/NumIn"
+                        android:layout_width="244dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/inputs"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:hint="Número de teléfono"
+                        android:digits="1234567890 "
+                        android:maxLength="10"
+                        android:singleLine="true"
+                        android:textColor="@color/verde_oscuro"
+                        android:inputType="phone"
+                        android:textColorHint="@color/verde_oscuro" />
+
+                    <android.widget.Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+
+                <android.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="12dp" />
+
+
+                <android.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="12dp" />
+
+                <!--Especialista-->
+
+                <LinearLayout
+                    android:id="@+id/Especialista"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <!--Profesion label-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <android.widget.Space
+                            android:layout_width="48dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:id="@+id/ProfesionLabel"
+                            android:layout_width="356dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Ingrese si es psiquiatra o psicologo:"
+                            android:textColor="@color/naranja"
+                            android:textSize="2mm"
+                            tools:ignore="DuplicateIds" />
+
+                    </LinearLayout>
+
+                    <android.widget.Space
+                        android:layout_width="match_parent"
+                        android:layout_height="12dp" />
+
+                    <!--Profesion input-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:orientation="horizontal">
+
+                        <android.widget.Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="44dp"
+                            android:layout_weight="1" />
+
+
+                        <EditText
+                            android:id="@+id/ProfesionInput"
+                            android:layout_width="240dp"
+                            android:layout_height="52dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/inputs"
+                            android:ems="10"
+                            android:gravity="center"
+                            android:hint="Psicologo o psiquiatra"
+                            android:singleLine="true"
+                            android:textColor="@color/verde_oscuro"
+                            android:inputType="textCapSentences"
+                            android:textColorHint="@color/verde_oscuro" />
+
+                        <android.widget.Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                    </LinearLayout>
+
+                    <android.widget.Space
+                        android:layout_width="match_parent"
+                        android:layout_height="12dp" />
+
+                    <!--Cedula label-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <android.widget.Space
+                            android:layout_width="48dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" />
+
+                        <TextView
+                            android:id="@+id/Cedula"
+                            android:layout_width="356dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="Cedula:"
+                            android:textColor="@color/naranja"
+                            android:textSize="2mm"
+                            tools:ignore="DuplicateIds" />
+
+                    </LinearLayout>
+
+                    <android.widget.Space
+                        android:layout_width="match_parent"
+                        android:layout_height="12dp" />
+
+                    <!--Cedula input-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="56dp"
+                        android:orientation="horizontal">
+
+                        <android.widget.Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" />
+
+
+                        <EditText
+                            android:id="@+id/CedulaInput"
+                            android:layout_width="255dp"
+                            android:layout_height="56dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/inputs"
+                            android:ems="10"
+                            android:gravity="center"
+                            android:hint="Ingrese su cédula profesional"
+                            android:maxLength="8"
+                            android:singleLine="true"
+                            android:textColor="@color/verde_oscuro"
+                            android:inputType="textCapSentences"
+                            android:textColorHint="@color/verde_oscuro" />
+
+                        <android.widget.Space
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <android.widget.Space
+                    android:layout_width="match_parent"
+                    android:layout_height="39dp" />
+
+                <!-- Botón registro-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="66dp"
+                    android:orientation="horizontal">
+
+                    <android.widget.Space
+                        android:layout_width="64dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <Button
+                        android:id="@+id/Registrobtn"
+                        android:layout_width="147dp"
+                        android:layout_height="64dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/boton_azul"
+                        android:text="Registro" />
+
+                    <android.widget.Space
+                        android:layout_width="77dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp" />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

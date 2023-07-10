@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.MiForo"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Foro"
+            android:textColor="@color/naranja"
+            android:textSize="7mm"
+            android:textStyle="bold"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+            <Button
+                android:id="@+id/Todo"
+                android:layout_width="150dp"
+                android:layout_height="60dp"
+                android:layout_weight="0"
+                android:text="Todo el foro"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="115dp"
+                android:background="@drawable/boton_morado"
+                android:layout_gravity="center"/>
+
+            <Button
+                android:id="@+id/Nueva"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_weight="0"
+                android:background="@drawable/boton_azul"
+                android:text="+"
+                android:textSize="7mm"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/Error"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"
+            android:textSize="3mm"
+            android:textColor="@color/naranja"
+            android:text="No hay nada que ver aquí"
+            android:textAlignment="center"/>
+
+        <ListView
+            android:id="@+id/listaPubli"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="40dp"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.Login"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="110dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="185dp"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="37dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/TituloPagina"
+                android:layout_width="336dp"
+                android:layout_height="wrap_content"
+                android:text="Inicia sesión y accede a Blue"
+                android:textColor="@color/naranja"
+                android:textSize="8mm"
+                android:textStyle="bold" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="49dp" />
+
+        <EditText
+            android:id="@+id/UsuarioCorreo"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:hint="Correo"
+            android:singleLine="true"
+            android:textColor="@color/verde_oscuro"
+            android:textColorHint="@color/verde_oscuro"
+            android:background="@drawable/inputs"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="25dp" />
+
+            <EditText
+                android:id="@+id/Contrasena"
+                android:layout_width="300dp"
+                android:layout_height="60dp"
+                android:ems="10"
+                android:inputType="textPassword"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:hint="Contraseña"
+                android:singleLine="true"
+                android:textColor="@color/verde_oscuro"
+                android:textColorHint="@color/verde_oscuro"
+                android:background="@drawable/inputs"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="27dp" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginLeft="60dp"
+            android:layout_gravity="center"
+            android:background="@drawable/botones_login_registro"
+            android:text="Iniciar sesión"/>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="40dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/DerechosLabel"
+                android:layout_width="match_parent"
+                android:layout_height="37dp"
+                android:text="UPIIZ TEAM AMEBA 2022"
+                android:textColor="@color/naranja"
+                android:gravity="center"/>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
